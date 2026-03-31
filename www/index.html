@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Used Phones Kenya</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* container */
+.box {
+    text-align: center;
+}
+
+/* input */
+input {
+    padding: 12px;
+    width: 220px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* button */
+button {
+    margin-top: 10px;
+    padding: 12px 20px;
+    border: none;
+    background: #22c55e;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+    <h2>Used Phones Kenya</h2>
+    <p>Enter your name</p>
+
+    <input id="username" placeholder="Your name" />
+    <br>
+
+    <button onclick="submitName()">Continue</button>
+</div>
+
+<script>
+function submitName() {
+    let name = document.getElementById("username").value;
+
+    if (name.trim() === "") {
+        alert("Please enter your name");
+        return;
+    }
+
+    alert("HELLO " + name.toUpperCase());
+}
+</script>
+
+</body>
+</html>
